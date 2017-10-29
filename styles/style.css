@@ -5,8 +5,8 @@ body {
 
 }
 p {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 22px;
+    /*text-align: justify;*/
 }
 .bg-1 {
     background-color: #0582CA;
@@ -24,6 +24,10 @@ p {
     background-color: #051923;
     color: #ffffff;
 }
+.bg-5 {
+    background-color: #000412;
+    color: #ffffff;
+}
 .container-fluid {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -36,9 +40,7 @@ p {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 4px;
-}
-.navbar-nav li a:hover {
-    color: #1abc9c
+
 }
 .margin{
     margin-bottom: 45px;

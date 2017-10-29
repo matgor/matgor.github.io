@@ -17,48 +17,51 @@
 
 <body>
 <!--  NavBar  -->
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Mateusz Gorczyca</a>
+<header>
+    <nav class="navbar navbar-default ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mateusz Gorczyca</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">O mnie</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
+</header>
 <!--  1st container  -->
-<header class="container-fluid bg-1 text-center">
+<section class="container-fluid bg-1 text-center" id="home">
     <h1 class="margin">Mateusz Gorczyca</h1>
     <h2 class="margin">Junior Front-end Developer</h2>
     <img src="img/portrait1.JPG" class="img-responsive img-circle margin" style="display:inline"
-         alt="Mateusz Gorczyca - portret" width="350" height="350">
+         alt="Mateusz Gorczyca - portrait" width="350" height="350">
     <h3>Hi! I'm Matthew.<br> front-end developer / marine biologist / adventurer</h3>
-</header>
+</section>
 <!--2nd container-->
-<div class="container-fluid bg-2 text-center">
+<section class="container-fluid bg-2 text-center" id="about">
     <h3 class="margin">Who am I?</h3>
-    <p>I am a front-end developer wannabe. I asm an experienced marine biologist with a passion for web design. I
-        am a man of many interests and passions. Excellent by myself and even better in a team. Hungry for knowledge
+    <p>Front-end developer wannabe. <br> Experienced marine biologist with a passion for web design. I
+        am a man of many interests and passions. <br> Excellent by myself and even better in a team. Hungry for knowledge
         and passionate.</p>
     <a href="https://pl.linkedin.com/in/mateusz-gorczyca-35511659" target="_blank" class="btn btn-default btn-lg>">
         <span class="fa fa-linkedin"></span>
     </a>
-</div>
+</section>
 <!--3rd container-->
-<div class="container-fluid bg-3 text-center">
+<section class="container-fluid bg-3 text-center" id="3rd-container">
     <h3 class="margin">What can I do?</h3>
     <div>
-        <div class="row">
+        <div class="row margin">
           <div class="col-sm-4">
             <img src="img/200px-HTML5.png" alt="HTML 5">
           </div>
@@ -71,12 +74,12 @@
         </div>
 
     </div>
-    <div class="row">
+    <div class="row margin">
         <div class="col-sm-2">
           <img src="img/150px-Bootstrap.png" alt="Bootstrap icon">
         </div>
         <div class="col-sm-2">
-          <img src="img/150px-sass.png" alt="Bootstrap icon">
+          <img src="img/150px-Sass.png" alt="Sass icon">
         </div>
         <div class="col-sm-4">
           <img src="img/150px-jQuery.png" alt="jQuery icon">
@@ -91,36 +94,42 @@
           Coś
         </div>
     </div>
-</div>
+</section>
 <!--4th container-->
-<div class="container-fluid bg-4 text-center">
-    <h3 class="margin">My portfolio</h3>
-    <div class="row">
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>Pomocnik zakupowy</h4>
+    <section class="container-fluid bg-4 text-center" id="portfolio">
+        <h3 class="margin">My portfolio</h3>
+        <div class="row">
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>Pomocnik zakupowy</h4>
+            </div>
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>2</h4>
+            </div>
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>3</h4>
+            </div>
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>4</h4>
+            </div>
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>5</h4>
+            </div>
+            <div class="col-sm-2">
+              <img src="#" alt="#">
+              <h4>6</h4>
+            </div>
         </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>2</h4>2
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>3</h4>3
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>4</h4>4
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>5</h4>5
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>6</h4>6
-        </div>
-    </div>
-    </div>
+    </section>
+<!--5th container-->
+<footer class="container-fluid bg-5 text-center" id="contact">
+<h3>Contact</h3>
+    email
+    linked in
+</footer>
 </body>
 </html>
