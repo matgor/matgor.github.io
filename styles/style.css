@@ -1,45 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
-    font: 20px Monserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Boxsizing*/
+* {
+    box-sizing: border-box;
+}
+
+/*NavBar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1b346c;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #f54b1a;
+}
+
+/*1st section*/
+section {
+    padding: 5%;
+}
+
+.about {
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-1 {
+    background-color: #01abe9;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 
 }
-p {
-    font-size: 16px;
-    text-align: justify;
-}
-.bg-1 {
-    background-color: #0582CA;
+.title {
+    display: block;
+    font-family: "Aleo", serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: auto;
+    text-align: center;
     color: #ffffff;
+    padding-bottom: 5%;
 }
+
+/*2nd section*/
+
 .bg-2 {
-    background-color: #006494;
-    color: #ffffff;
+    background-color: #1b346c;
 }
+.subtitle {
+    display: block;
+    font-family: "Aleo", serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 5%;
+}
+
+.flexible-media {
+    margin: 1em 0;
+}
+
+.flexible-media img {
+    max-width: 100%;
+    border: none;
+}
+/*3rd section*/
+
 .bg-3 {
-    background-color: #003554;
-    color: #ffffff;
+    background-color: #e5c39e;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.margin-auto {
+    margin: auto;
+}
+
+/*4th section*/
+
 .bg-4 {
-    background-color: #051923;
-    color: #ffffff;
+    background-color: #c4ced0;
 }
-.container-fluid {
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+/*Grid system*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
-.navbar {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 4px;
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-.navbar-nav li a:hover {
-    color: #1abc9c
-}
-.margin{
-    margin-bottom: 45px;
+/*Responsivness*/
+@media (max-width:800px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
 }

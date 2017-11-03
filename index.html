@@ -1,126 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mateusz Gorczyca. A Web developer specialising in front-end development (HTML5, CSS3, JavaScript, ReactJS) from Gdansk, Poland. This is a website created to show the things that have been made by me." />
-    <meta name="keywords" content="Mateusz,Gorczyca,Front-end,Front End developer,HTML,HTML 5,CSS,CSS3,javascript,Object Oriented,Canvas,Responsive Design, Development, Web Design, User Experience, Mobile Interface, Design, Mateusz Gorczyca, Gdansk, Poland, Gdansk Web Developer, Bristol Web Development, Strony WWW, Tworzenie" />
-    <meta name="author" content="Mateusz Gorczyca" />
-    <title>Mateusz Gorczyca - Front-End Developer</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mateusz Gorczyca. A Web developer specialising in front-end development (HTML5, CSS3, JavaScript, ReactJS) from Gdansk, Poland. This is a website created to show the things that have been made by me." />
+  <meta name="keywords" content="Mateusz,Gorczyca,Front-end,Front End developer,HTML,HTML 5,CSS,CSS3,javascript,Object Oriented,Canvas,Responsive Design, Development, Web Design, User Experience, Mobile Interface, Design, Mateusz Gorczyca, Gdansk, Poland, Gdansk Web Developer, Bristol Web Development, Strony WWW, Tworzenie" />
+  <meta name="author" content="Mateusz Gorczyca" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Mateusz Gorczyca - Front-end developer</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-<!--  NavBar  -->
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Mateusz Gorczyca</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">O mnie</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">O mnie</a></li>
+      <li><a href="#competencies">Kompetencje</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+  <section class="section-1 bg-1" id="home">
+    <h1 class="title">Mateusz Gorczyca</h1>
+    <p class="about">I am a front-end developer wannabe. I am a marine biologist with a passion for web
+      design. </p>
+  </section>
+  <section class="bg-2">
+    <h1 class="subtitle" id="competencies">Kompetencje</h1>
+    <div class="flex-center">
+      <img class="flexible-media" src="img/HTML-CSS-JS.png" alt="HTML, CSS, JS">
     </div>
-</nav>
-<!--  1st container  -->
-<header class="container-fluid bg-1 text-center">
-    <h1 class="margin">Mateusz Gorczyca</h1>
-    <h2 class="margin">Junior Front-end Developer</h2>
-    <img src="img/portrait1.JPG" class="img-responsive img-circle margin" style="display:inline"
-         alt="Mateusz Gorczyca - portret" width="350" height="350">
-    <h3>Hi! I'm Matthew.<br> front-end developer / marine biologist / adventurer</h3>
-</header>
-<!--2nd container-->
-<div class="container-fluid bg-2 text-center">
-    <h3 class="margin">Who am I?</h3>
-    <p>I am a front-end developer wannabe. I asm an experienced marine biologist with a passion for web design. I
-        am a man of many interests and passions. Excellent by myself and even better in a team. Hungry for knowledge
-        and passionate.</p>
-    <a href="https://pl.linkedin.com/in/mateusz-gorczyca-35511659" target="_blank" class="btn btn-default btn-lg>">
-        <span class="fa fa-linkedin"></span>
-    </a>
-</div>
-<!--3rd container-->
-<div class="container-fluid bg-3 text-center">
-    <h3 class="margin">What can I do?</h3>
-    <div>
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="img/200px-HTML5.png" alt="HTML 5">
-          </div>
-          <div class="col-sm-4">
-            <img src="img/200px-JS.png" alt="JavaScript">
-          </div>
-          <div class="col-sm-4">
-            <img src="img/200px-css3.png" alt="HTML, CSS, JS icon">
-          </div>
-        </div>
-
-    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <section class="bg-3" id="portfolio">
+    <h1 class="subtitle">Portfolio</h1>
     <div class="row">
-        <div class="col-sm-2">
-          <img src="img/150px-Bootstrap.png" alt="Bootstrap icon">
-        </div>
-        <div class="col-sm-2">
-          <img src="img/150px-sass.png" alt="Bootstrap icon">
-        </div>
-        <div class="col-sm-4">
-          <img src="img/150px-jQuery.png" alt="jQuery icon">
-        </div>
-        <div class="col-sm-2">
-          <img src="img/150px-reactjs.png" alt="ReactJS icon">
-        </div>
-        <div class="col-sm-2">
-          Jeszcze coś
-        </div>
-        <div class="col-sm-2">
-          Coś
-        </div>
+      <div class="col-3">
+        Pomocnik zakupowy
+      </div>
+      <div class="col-3">
+        2
+      </div>
+      <div class="col-3">
+        3
+      </div>
+      <div class="col-3">
+        4
+      </div>
     </div>
-</div>
-<!--4th container-->
-<div class="container-fluid bg-4 text-center">
-    <h3 class="margin">My portfolio</h3>
+  </section>
+  <section class="bg-4">
+    <h1 class="subtitle" id="contact">Kontakt</h1>
     <div class="row">
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>Pomocnik zakupowy</h4>
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>2</h4>2
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>3</h4>3
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>4</h4>4
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>5</h4>5
-        </div>
-        <div class="col-sm-2">
-          <img src="#" alt="#">
-          <h4>6</h4>6
-        </div>
+      <div class="col-3">
+        E-mail
+      </div>
+      <div class="col-3">
+        linkedIn
+      </div>
+      <div class="col-3">
+        Github
+      </div>
+      <div class="col-3">
+        4
+      </div>
     </div>
-    </div>
+  </section>
 </body>
 </html>
