@@ -89,6 +89,7 @@ li a:hover:not(.active) {
 /*1st section*/
 section {
     padding: 5%;
+    min-height: 100vh;
 }
 
 .about {
