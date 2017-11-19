@@ -223,10 +223,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #888e99;
 }
 
+
+
+
 /*OTHER*/
 .other {
     min-height: 100vh;
-    background-color: #01abe8;
+    background-color: #014766;
     margin-top: -20px;
     border: 20px solid;
     border-color: white;
@@ -243,11 +246,30 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-.other__skills {
+.other__skills__paragraph {
     max-width: 700px;
-    text-align: center;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.75rem;
 }
-
+.other__skills__paragraph--red {
+    color: #df6c74;
+}
+.other__skills__paragraph--green {
+    color: #99c46d;
+}
+.other__skills__paragraph--yellow {
+    color: #ecce79;
+}
+.other__skills__paragraph--purple {
+    color: #af47de;
+}
+.other__skills__paragraph--blue {
+    color: #268ae1;
+}
+.other__skills__paragraph--lightblue {
+    color: #4cd5fb;
+}
 .other__skills__button__link {
     display: inline-block;
     color: #ffffff;
@@ -259,9 +281,15 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
-
 }
-
+.other__footer__paragraph {
+    display: block;
+    text-align: left;
+    max-width: 900px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
 
 /*RESUME*/
 
