@@ -204,7 +204,6 @@ h1, h2, h3, h4, h5, h6 {
 .projects__header {
     text-align: center;
     padding-top: 5.625rem;
-    padding-bottom: 5.625rem;
 }
 .projects__header__title {
     font-size: 3em;
@@ -229,6 +228,13 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 100px;
     min-height: 100px;
     background-color: black;
+}
+.projects__skills {
+    justify-content: center;
+}
+.projects__skills__container{
+    margin: 20px;
+    background-color: #ffffff;
 }
 .projects__skills__title {
     margin-top: 20px;
@@ -349,9 +355,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3em;
     font-weight: bold;
     line-height: 1.5;
-}
-.resume__footer__paragraph {
-
 }
 /*CONTACT*/
 
